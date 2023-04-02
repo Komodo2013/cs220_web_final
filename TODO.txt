@@ -1,0 +1,12 @@
+https://openart.ai/create?
+(About)     Write up basic company description, founder picture
+(Audit)     Write up what it is, picture, button to request audit
+(Products)  Many pictures and descriptions of various systems
+(Reviews)   Sample reviews (js randomizer?) form to add testimonial
+(Contact)   Form and contact display information
+
+(Products)  Bootstrap pager element to be a secondary navigation throughout the website.
+(Products)  JavaScript array.
+(Contact)   1 Dialog/pop up box using JavaScript when a button is pressed.
+(Reviews)   Code a basic HTML comments function form for a testimonials page.
+(Contact)   Within the contact us page please include a map of the business location static or interactive along with the following: address phone number, and email address.

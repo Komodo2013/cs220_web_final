@@ -1,0 +1,33 @@
+.jumbotron {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.jumbotron-1 {
+  background-image: url('../assets/lakeside.jpg');
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+}
+.jumbotron-2 {
+  background-image: url('../assets/watertap.jpg');
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+}
+.jumbotron-3 {
+  background-image: url('../assets/filter.jpg');
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+}
+.jumbotron-4 {
+  background-image: url('../assets/agents.jpg');
+  background-size: cover;
+  background-position: center;
+  background-origin: content-box;
+}
