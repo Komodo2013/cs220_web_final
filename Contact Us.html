@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.js"></script>
+    <script>
+		function initMap() {
+			var location = {lat: 40.771316482404494, lng: -111.90022494456346};
+			var map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 15,
+				center: location
+			});
+			var marker = new google.maps.Marker({
+				position: location,
+				map: map
+			});
+		}
+	</script>
+</head>
+<body onload="initMap()">
+	<header>
+		<div class="logo-container">
+        	<a href="https://www.google.com"><img src="https://www.clipartmax.com/png/small/65-654379_aquawave-express-wash-aqua-wave-car-wash.png"  alt="Company Logo"></a>
+		</div>
+		<div class="header-content">
+			<h1>Contact Us</h1>
+			<p>We'd love to hear from you!</p>
+		</div>
+	</header>
+	<main>
+		<section id="contact-form">
+			<h2>Get in Touch</h2>
+			<form>
+				<div class="form-row">
+					<label for="name">Name</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+				<div class="form-row">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" required>
+				</div>
+				<div class="form-row">
+					<label for="phone">Phone</label>
+					<input type="tel" id="phone" name="phone">
+				</div>
+				<div class="form-row">
+					<label for="message">Message</label>
+					<textarea id="message" name="message" rows="5" required></textarea>
+				</div>
+				<button type="submit">Send</button>
+			</form>
+		</section>
+		<section id="contact-info">
+			<h2>Contact Information</h2>
+			<div class="col-md-6 d-flex align-items-center justify-content-center" style="text-align: center;">
+				<p>95 North 300 West Salt Lake City, UT 84101-3500</p>
+				<br>
+				<p>801-524-8100</p>
+				<br>
+				<p> <a href="mailto:tours@ensign.edu">tours@ensign.edu</a></p>
+			</div>
+			<div id="map"></div>
+		</section>
+	</main>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBufDNCE1IknmlfC_OvAFOJtBFo6Lj9-kA&callback=initMap"></script>
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
