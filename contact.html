@@ -1,35 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Contact Us</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="styles/contact_styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.js"></script>
-    <script>
-		function initMap() {
-			var location = {lat: 40.771316482404494, lng: -111.90022494456346};
-			var map = new google.maps.Map(document.getElementById("map"), {
-				zoom: 15,
-				center: location
-			});
-			var marker = new google.maps.Marker({
-				position: location,
-				map: map
-			});
-		}
-	</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AquaWave: Contact</title>
+  <meta name="description" content="This is a sample website for a fictional company AquaWave. In this scenario AquaWave is a company that provides sustainable solutions to help people conserve and better use water resources. Their services include water audits and management plans, installation of water-efficient fixtures and appliances, rainwater harvesting systems, and irrigation system upgrades. AquaWave's mission is to reduce water waste and promote responsible water use for a better future.">
+  <link rel="shortcut icon" href="assets/company/logo.png" type="image/x-icon">
+  <link rel="icon" href="assets/company/logo.png" type="image/x-icon">
+
+  <meta name="author" content="Jacob Larsen & Levi Shelley">
+  <link rel="license" href="https://www.apache.org/licenses/LICENSE-2.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper-core.min.js"
+          integrity="sha384-ZKMd1Kg0xdzT+TExfX9nzp0D0I/K1xMxG4z35iYkG3f72bWU4v6SdyX9VPo36J79" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+          integrity="sha384-Ks7+6U4/HqYzN6BVONv6UzX9S+hzm6ZIysQ8BvnojKz0Rwt22yKjQ2OAWxtHPD0r"
+          crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-xS12X6nPJHvZWG8QoW5w5Tv5Lc/k1pZD8Nbz+gwj/maET+X6Uksv6fwWz/u+4p/" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/8640e1b233.js" crossorigin="anonymous"></script>
+  <script>
+	function initMap() {
+		var location = {lat: 40.771316482404494, lng: -111.90022494456346};
+		var map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 15,
+			center: location
+		});
+		var marker = new google.maps.Marker({
+			position: location,
+			map: map
+		});
+	}
+</script>
+  <link rel="stylesheet" href="styles/contact_style.css">
 </head>
-<body onload="initMap()">
-	<header>
-		<div class="logo-container">
-        	<a href="index.html"><img src=assets/company/logo-small.png> <alt=Company Logo></a>
-		</div>
-		<div class="header-content" style="text-align:justify;">
-			<h1>Contact Us</h1>
-			<p>We'd love to hear from you!</p>
-		</div>
-	</header>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-header">
+    <a class="navbar-brand" href="index.html"><img src="assets/company/logo.png" style="width: 120px; border-radius: 60px"></a>
+    <header class="contact-header">
+      <h1 style="align-items: center;">Contact Us</h1>
+    </header>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link menu-btn" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-btn" href="learn-more.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle menu-btn" href="#" id="navbarDropdownServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Services
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownServices">
+            <a class="dropdown-item" href="water-audits.html">Water Audit</a>
+            <a class="dropdown-item" href="products.html">Products</a>
+            <a class="dropdown-item" href="reviews.html">Testimonials</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menu-btn" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>  
+<main>
 	<main>
 		<section id="contact-form">
 			<h2>Get in Touch</h2>
@@ -55,7 +99,7 @@
 		</section>
 		<section id="contact-info">
 			<h2>Contact Information</h2>
-			<div class="col-md-6 d-flex align-items-center justify-content-center" style="text-align: center;">
+			<div style="text-align: center;">
 				<p>95 North 300 West Salt Lake City, UT 84101-3500</p>
 				<br>
 				<p>801-524-8100</p>
@@ -66,5 +110,6 @@
 		</section>
 	</main>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBufDNCE1IknmlfC_OvAFOJtBFo6Lj9-kA&callback=initMap"></script>
+	
 </body>
 </html>

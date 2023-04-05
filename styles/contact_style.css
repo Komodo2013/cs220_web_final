@@ -7,7 +7,6 @@ body {
 }
 
 header {
-    background-color: #1a2e42;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -153,3 +152,16 @@ button[type="submit"] {
     border-radius: 5px;
     font-size: 18px; 
 }
+
+.contact-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60px; /* adjust height as needed */
+  }
+  
+  .contact-header h1 {
+    font-size: 24px; /* adjust font size as needed */
+    margin: 0;
+  }
