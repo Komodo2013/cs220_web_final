@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testimonials</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/test_style.css">
+</head>
+<body>
+	<header>
+        <div class="header-logo">
+          <a href="index.html"><img src="assets/company/logo.png" alt="Company Logo"></a>
+        </div>
+        <div class="header-title">
+          <h1>Testimonials</h1>
+        </div>
+      </header>
+      
+	<main>
+		<section>
+			<h2>What our clients are saying:</h2>
+			<div id="testimonials">
+				<!-- Testimonials will be dynamically added here -->
+			</div>
+			<form id="testimonial-form">
+				<h3>Add a Testimonial:</h3>
+				<div>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required>
+				</div>
+				<div>
+					<label for="testimonial">Testimonial:</label>
+					<textarea id="testimonial" name="testimonial" required></textarea>
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+		</section>
+	</main>
+	<footer>
+        <p>&copy; <span id="currentYear"></span> AquaWave. All rights reserved. Created Apr 2023 by Jacob Larsen and Levi Shelley</p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="scripts/test_script.js"></script>
+    <script>
+        // Get the current year and update the copyright tag
+        $("#currentYear").html(new Date().getFullYear());
+    </script>
+</body>
+</html>
