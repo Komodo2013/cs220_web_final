@@ -1,5 +1,1 @@
-https://openart.ai/create?
-(Products)  Many pictures and descriptions of various systems
-
-(Products)  Bootstrap pager element to be a secondary navigation throughout the website.
 (Products)  JavaScript array.
