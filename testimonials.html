@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>AquaWave: Reviews</title>
+  <title>AquaWave: Testimonials</title>
   <meta name="description" content="This is a sample website for a fictional company AquaWave. In this scenario AquaWave is a company that provides sustainable solutions to help people conserve and better use water resources. Their services include water audits and management plans, installation of water-efficient fixtures and appliances, rainwater harvesting systems, and irrigation system upgrades. AquaWave's mission is to reduce water waste and promote responsible water use for a better future.">
   <link rel="shortcut icon" href="assets/company/logo.png" type="image/x-icon">
   <link rel="icon" href="assets/company/logo.png" type="image/x-icon">
@@ -26,11 +26,14 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-xS12X6nPJHvZWG8QoW5w5Tv5Lc/k1pZD8Nbz+gwj/maET+X6Uksv6fwWz/u+4p/" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/8640e1b233.js" crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/test_style.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-header">
     <a class="navbar-brand" href="index.html"><img src="assets/company/logo.png" style="width: 120px; border-radius: 60px"></a>
+    <header class="testimonials-header">
+      <h1 style="align-items: center;">Testimonials</h1>
+    </header>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -57,8 +60,27 @@
         </li>
       </ul>
     </div>
-  </nav>
-  <p>Lorem Ipsum</p>
+  </nav>  
+<main>
+<section>
+<h2>What our clients are saying:</h2>
+<div id="testimonials">
+  <!-- Testimonials will be dynamically added here -->
+</div>
+<form id="testimonial-form">
+  <h3>Add a Testimonial:</h3>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  <div>
+    <label for="testimonial">Testimonial:</label>
+    <textarea id="testimonial" name="testimonial" required></textarea>
+  </div>
+  <button type="submit">Submit</button>
+</form>
+</section>
+</main>
   <footer class="footer" style="position: fixed; bottom: 0; width: 100%;">
     <div class="container text-center" style="display: flex; justify-content: space-between;">
       <p>&copy; <span id="currentYear"></span> AquaWave. All rights reserved. Created Apr 2023 by Jacob Larsen and Levi Shelley</p>
@@ -75,5 +97,7 @@
       // Get the current year and update the copyright tag
       $("#currentYear").html(new Date().getFullYear());
   </script>
+  <script src="scripts/test_script.js"></script>
+
 </body>
 </html>
