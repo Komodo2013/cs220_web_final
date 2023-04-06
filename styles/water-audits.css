@@ -1,0 +1,26 @@
+#redirect-btn {
+  display: block;
+  margin: 0 auto;
+  background-color: #01af9d;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#redirect-btn:hover {
+  background-color: #018f81;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+#redirect-btn:focus {
+  outline: none;
+  background-color: #01554d;
+  transform: translateY(-1px);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}

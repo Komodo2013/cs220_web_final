@@ -1,6 +1,4 @@
 https://openart.ai/create?
-(About)     Write up basic company description, founder picture
-(Audit)     Write up what it is, picture, button to request audit
 (Products)  Many pictures and descriptions of various systems
 
 (Products)  Bootstrap pager element to be a secondary navigation throughout the website.

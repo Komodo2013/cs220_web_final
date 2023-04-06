@@ -1,0 +1,37 @@
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel img {
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  background-color: #ccc;
+  border: none;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+.pagination button.active {
+  background-color: #333;
+}
+

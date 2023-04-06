@@ -27,6 +27,7 @@
   <script src="https://kit.fontawesome.com/8640e1b233.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/water-audits.css">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-header">
@@ -58,7 +59,27 @@
       </ul>
     </div>
   </nav>
-  <p>Lorem Ipsum</p>
+  <div class="row align-items-center" style="padding: 5%; padding-left: 10%; padding-right: 10%">
+    <div class="col-md-6">
+      <p>AquaWave's water audit is a comprehensive evaluation of your tap water quality, identifying any potential health concerns. Our experts will conduct a thorough analysis to ensure the safety of your drinking water. With this service, you can have peace of mind knowing that you and your loved ones are drinking clean and safe water.</p>
+      <p>Having a water audit is crucial because it can help identify any potential health concerns with your tap water. With AquaWave's water audit service, you can rest assured that your water is safe for you and your family to consume. This service takes just a 15-minute appointment and the results are available the next day. By identifying any potential health risks, you can take necessary steps to improve the quality of your water and protect the health of your family. With AquaWave's water audit service, you can have peace of mind knowing that you are taking proactive steps towards ensuring the safety of your drinking water.</p>
+      <button id="redirect-btn">Schedule an appointment today!</button>
+      <script>
+        $(document).ready(function() {
+          $('#redirect-btn').click(function() {
+            if (confirm("Taking you to our Contact Page. Click OK to continue.")) {
+              window.location.href = "contact.html";
+            } else {
+              // do nothing
+            }
+          });
+        });
+      </script>
+    </div>
+    <div class="col-md-6 d-flex align-items-center justify-content-center">
+      <img src="assets/scientist.png" class="img-fluid" style="max-width: 100%">
+    </div>
+  </div>
   <footer class="footer" style="position: fixed; bottom: 0; width: 100%;">
     <div class="container text-center" style="display: flex; justify-content: space-between;">
       <p>&copy; <span id="currentYear"></span> AquaWave. All rights reserved. Created Apr 2023 by Jacob Larsen and Levi Shelley</p>
